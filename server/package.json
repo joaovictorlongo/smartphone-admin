@@ -2,6 +2,7 @@
   "name": "server",
   "module": "index.ts",
   "dependencies": {
+    "@elysiajs/jwt": "^1.2.0",
     "elysia": "^1.2.9"
   },
   "scripts": {
@@ -9,7 +10,7 @@
     "build": "bun build src/index.ts --target bun --outdir ./dist",
     "start": "NODE_ENV=production bun dist/index.js",
     "test": "bun test"
-   },
+  },
   "peerDependencies": {
     "typescript": "^5.0.0"
   },
